@@ -1,0 +1,134 @@
+.App {
+  text-align: center;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.table {
+  width: 100%;
+}
+
+.headerflex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.topHeader th {
+  background-color: #f2f3fb;
+  border-bottom: 1px solid #c3cad8;
+  border-right: 1px solid #c3cad8;
+  border-top: 1px solid #c3cad8;
+  font-size: 1em;
+  font-weight: 500;
+  height: 41px;
+  color: #0a1551;
+  flex: 0 1 auto;
+  font-size: 0.875em;
+  text-align: start;
+  font-weight: 500;
+  user-select: none;
+}
+
+
+.checkStatus-input {
+  height: 15px;
+  width: 15px;
+}
+
+.checkStatus-input:checked {
+  background-color: #0a1551;
+  border: 2px solid #c3cad8;
+}
+
+.box {
+  position: absolute;
+  display: none;
+}
+
+.box.open {
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.box .dropbox {
+  --bg-opacity: 1;
+  background-color: rgba(37, 45, 91, var(--bg-opacity));
+  border-radius: 0.25rem;
+  max-height: 70vh;
+  list-style: none;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.box .dropbox li {
+  padding: 10px;
+}
+
+.box .dropbox .items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  --bg-opacity: 1;
+  background-color: rgba(37, 45, 91, var(--bg-opacity));
+  border: 0;
+}
+
+.box .dropbox .items span {
+  font-size: 15px;
+  line-height: 20px;
+  --color-opacity: 1;
+  color: rgba(255, 255, 255, var(--color-opacity));
+  font-weight: 500;
+}
+
+
+.dropsection {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+}
+
+.iconstyle {
+  color: #b3b5c7;
+  font-size: 20px !important;
+  margin: 0 10px;
+}
+
+
+
+.bottomHeader td {
+  padding: 10px;
+  border: 1px solid #c3cad8;
+
+}
+
+.bottomHeader td .status {
+  background-color: rgba(158, 161, 180, .2);
+  color: #8789d6;
+  border: 0 !important;
+  border-radius: 4px !important;
+  box-shadow: none !important;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 8px;
+  white-space: nowrap;
+}
+
+.bottomHeader td .status.red {
+  color: rgb(195, 53, 53);
+}
